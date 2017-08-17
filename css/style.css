@@ -4,3 +4,24 @@ body {
 	background-size: contain;
 	background-position: center;
 }
+
+#caixa-texto{
+    -ms-transform: skewY(10deg); /* IE 9 */
+    transform: skewY(8deg); /* Standard syntax */
+    -webkit-transform: skewY(7deg); /* Safari */
+}
+
+#top{
+	display: block;
+	margin-top: 1em;
+}
+
+#middle{
+	display: block;
+	margin-top: 12em;
+}
+
+#footer{
+		display: block;
+		margin-top: 18em;
+}
