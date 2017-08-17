@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC|Amatic+SC|Josefin+Sans|Montserrat|Open+Sans+Condensed:300|Oswald|Playfair+Display|Raleway|Roboto+Condensed" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+		<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+	</head>
+	<body>
+
+		<div id="conteudo" class="pagination-centered">
+		<textarea rows="10"></textarea>
+			<div id="toolbar">
+				<div id="snow-wrapper">
+					<div id="snow-container">
+						<div class="toolbar">
+<!-- 							<select class="ql-font">
+								<option value = "opensanscondensed" selected>Open Sans Condensed</option>
+								<option value = "oswald">Oswald</option>
+								<option value = "amaticsc">Amatic SC</option>
+								<option value = "josefinsans">Josefin Sans</option>
+								<option value = "montserrat">Montserrat</option>
+								<option value = "robotocondensed">Roboto Condensed</option>
+							</select> -->
+							<span class="ql-formats">
+								<button class="ql-bold"></button>
+								<button class="ql-italic"></button>
+								<button class="ql-underline"></button>
+								<span class="ql-formats">
+									<button class="ql-list" value="ordered"></button>
+									<button class="ql-list" value="bullet"></button>
+									<select class="ql-align">
+										<option selected></option>
+										<option value="center"></option>
+										<option value="right"></option>
+										<option value="justify"></option>
+									</select>
+								</span>
+								<span class="ql-formats">
+									<button class="ql-link"></button>
+									<button class="ql-image"></button>
+									<button class="ql-video"></button>
+								</span>
+								<span class="ql-formats">
+									<button class="ql-formula"></button>
+									<button class="ql-code-block"></button>
+								</span>
+								<span class="ql-formats">
+									<button class="ql-clean"></button>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="editor" class="col-md-6">
+					<p>
+						Olá internauta da rede mundial de computadore,sa deixe sua mensagem para esse rico rapaz. E, aproveite para curtir seu canal.<br><br>
+						<a href="https://www.youtube.com/user/ciriotv" target="_blank">CirioTV</a><br><br>
+						<a href="https://www.youtube.com/playlist?list=PLxp7pD6wbCLFo7fQD4n_tdYeNZ7r79BQN" target="_blank">Cantadas Crônicas</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Include the Quill library -->
+		<script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+
+		<!-- Initialize Quill editor -->
+		<script>
+			var editor = new Quill('#editor', {
+				modules: { toolbar: '#toolbar' },
+				theme: 'snow'
+			});
+
+   //      	$(document).ready(function() {
+   //          	var fonts = ['opensanscondensed', 'oswald', 'amaticsc', 'josefinsans', 'montserrat', 'robotocondensed'];
+   //          	var Font = Quill.import('formats/font');
+   //          	Font.whitelist = fonts;
+   //          	Quill.register(Font, true);
+   //  			loadFonts();
+
+   //  			function loadFonts() {
+	  //   			alert('showe');
+	  //   			window.WebFontConfig = {
+   //  					google: {
+	  //   					families: [
+   //  							'Alegreya+SC::latin',
+   //  							'Amatic+SC::latin',
+   //  							'Josefin+Sans::latin',
+   //  							'Montserrat::latin',
+   //  							'Open+Sans+Condensed::latin',
+   //  							'Oswald::latin',
+   //  							'Playfair+Display::latin',
+   //  							'Roboto+Condensed::latin'
+   //  						]
+   //  					}
+   //  				};
+   //  			}
+   //  			(function() {
+   //  				var wf = document.createElement('script');
+   //  				wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+   //  				wf.type = 'text/javascript';
+   //  				wf.async = 'true';
+   //  				var s = document.getElementsByTagName('script')[0];
+   //  				s.parentNode.insertBefore(wf, s);
+			// 	})();
+			// })
+		</script>
+	</body>
