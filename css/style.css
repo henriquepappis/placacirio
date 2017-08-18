@@ -1,29 +1,34 @@
-body {
-	background-image: url('../images/placacirio.png');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-}
-
-#caixa-texto{
-    -ms-transform: skewY(10deg); /* IE 9 */
-    transform: skewY(8deg); /* Standard syntax */
-    -webkit-transform: skewY(7deg); /* Safari */
-}
-
-#top{
+#top {
 	display: block;
 	margin-top: 1em;
 	text-align: justify;
     text-justify: inter-word;
 }
 
-#middle{
+#middle {
 	display: block;
-	margin-top: 12em;
 }
 
-#footer{
-		display: block;
-		margin-top: 18em;
+#footer {
+	display: block;
+}
+
+.imagem {
+	position: relative;
+}
+
+.texto {
+	position: absolute;
+	top: 420px;
+	left: 100px;
+	margin: 0 auto;
+	width: 650px;
+	height: 350px;
+	display: none;
+	font-size: 40px; 
+	text-align: center;
+	-ms-transform: skewY(-1deg); /* IE 9 */
+	transform: skewY(-1deg); /* Standard syntax */
+	-webkit-transform: skewY(-1deg); /* Safari */
+	white-space: pre-wrap;
 }
