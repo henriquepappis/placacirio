@@ -1,16 +1,18 @@
-#top {
-	display: block;
-	margin-top: 1em;
-	text-align: justify;
-    text-justify: inter-word;
+.fonte {
+	font-family: 'Frijole', cursive;
 }
 
-#middle {
+.top{
 	display: block;
+	border: 3px solid green;
 }
 
-#footer {
-	display: block;
+.middle {
+	margin-top: 250px;
+}
+
+.footer {
+	margin-top: 300px;
 }
 
 .imagem {
@@ -19,16 +21,19 @@
 
 .texto {
 	position: absolute;
-	top: 420px;
+	font-family: 'Frijole', cursive;
+	background: transparent;
+	border: none;
+	top: 370px;
 	left: 100px;
 	margin: 0 auto;
 	width: 650px;
-	height: 350px;
-	display: none;
-	font-size: 40px; 
-	text-align: center;
-	-ms-transform: skewY(-1deg); /* IE 9 */
-	transform: skewY(-1deg); /* Standard syntax */
-	-webkit-transform: skewY(-1deg); /* Safari */
+	height: 450px;
+	font-size: 60px;
+	-ms-transform: rotate(-2deg); /* IE 9 */
+	transform: rotate(-2deg); /* Standard syntax */
+	-webkit-transform: rotate(-2deg); /* Safari */
 	white-space: pre-wrap;
+	resize: none;
+	overflow:  hidden !important;
 }
