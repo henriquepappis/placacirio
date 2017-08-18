@@ -15,25 +15,40 @@
 	margin-top: 300px;
 }
 
-.imagem {
+#saveImage {
 	position: relative;
 }
 
-.texto {
+#caixa-texto {
 	position: absolute;
 	font-family: 'Frijole', cursive;
+	width: 100%;
+	height: 50%;
+	top: 42%;
 	background: transparent;
 	border: none;
-	top: 370px;
-	left: 100px;
-	margin: 0 auto;
-	width: 650px;
-	height: 450px;
-	font-size: 60px;
+	left: 0;
+	padding: 10px;
+
 	-ms-transform: rotate(-2deg); /* IE 9 */
 	transform: rotate(-2deg); /* Standard syntax */
 	-webkit-transform: rotate(-2deg); /* Safari */
 	white-space: pre-wrap;
+
 	resize: none;
 	overflow:  hidden !important;
+}
+
+.texto2 {
+	position: absolute;
+
+	background: transparent;
+	border: none;
+	/*top: 370px;*/
+	/*left: 100px;*/
+	margin: 0 auto;
+	/*width: 650px;*/
+	/*height: 450px;*/
+	font-size: 60px;
+
 }
