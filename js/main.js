@@ -36,8 +36,8 @@ function salvar(){
 				},
 				type: 'post',
 				success: function (response) {
-					console.log(response);
-					$('#result').html(response);
+					location.href = document.url+'saves/'+response;
+					// $('#result').html(response);
 				}
 			});
 		}
