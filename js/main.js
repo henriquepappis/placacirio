@@ -36,7 +36,7 @@ function salvar(){
 				},
 				type: 'post',
 				success: function (response) {
-					location.href = document.url+'saves/'+response;
+					location.href = 'saves/'+response;
 					// $('#result').html(response);
 				}
 			});
